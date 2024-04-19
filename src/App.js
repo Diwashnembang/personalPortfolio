@@ -1,17 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { test } from "./features/mainSlice";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
+import Nav from "./components/Nav";
 import Home from "./Home";
 function App() {
-  const dispatch = useDispatch();
-  const store = useSelector((state) => state.main.message);
-  console.log(store);
-  useEffect(() => {
-    dispatch(test("test"));
-  }, [dispatch]);
   return (
     <>
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
