@@ -7,6 +7,7 @@ import {
   Center,
   Show,
   Hide,
+  Text,
 } from "@chakra-ui/react";
 import CustomMenu from "./utils/CustomMenu";
 import logo from "../assets/image/Logo.svg";
@@ -33,16 +34,24 @@ const Nav = () => {
           <Box>
             <Grid templateColumns="repeat(4,1fr)">
               <GridItem className="text" mx="5px">
-                About me
+                <Text fontSize={{ base: "sm", md: "md", lg: "lg" }}>
+                  About me
+                </Text>
               </GridItem>
               <GridItem className="text" mx="5px">
-                Skills
+                <Text fontSize={{ base: "sm", md: "md", lg: "lg" }}>
+                  Skills
+                </Text>
               </GridItem>
               <GridItem className="text" mx="5px">
-                Project
+                <Text fontSize={{ base: "sm", md: "md", lg: "lg" }}>
+                  Project
+                </Text>
               </GridItem>
               <GridItem className="text" mx="5px">
-                Contact Me
+                <Text fontSize={{ base: "sm", md: "md", lg: "lg" }}>
+                  Contact me
+                </Text>
               </GridItem>
             </Grid>
           </Box>
