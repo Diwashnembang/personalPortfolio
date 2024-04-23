@@ -1,11 +1,4 @@
-import {
-  Box,
-  Image,
-  Text,
-  Center,
-  VStack,
-  Heading,
-} from "@chakra-ui/react";
+import { Box, Image, Text, Center, VStack, Heading } from "@chakra-ui/react";
 import HeroImage from "../assets/image/Frame 20.png";
 import React from "react";
 
@@ -13,13 +6,25 @@ const Home = () => {
   return (
     <>
       <Center>
-        <VStack maxW="1280px" w="1280px" position={"relative"} my={"4rem"}>
+        <VStack
+          maxW="1280px"
+          w="1280px"
+          position={"relative"}
+          my={{ base: "1rem", md: "4rem" }}
+          mx={"1rem"}
+        >
           <Box
             w={"100%"}
             display={"flex"}
             justifyContent={{ base: "flex-Start", md: "flex-end" }}
           >
-            <Image src={HeroImage}></Image>
+            <Image
+              src={HeroImage}
+              transform={{
+                base: "translateX(-10%)",
+                md: "translateX(3rem)",
+              }}
+            ></Image>
           </Box>
           <Box
             position={{ base: "relative", md: "absolute" }}

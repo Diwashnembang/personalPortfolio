@@ -20,8 +20,8 @@ const Nav = () => {
       <Flex
         maxW="1280px"
         w="1280px"
-        mx="40px"
-        my="15px"
+        mx="1rem"
+        my={{ base: "0.5rem", md: "15px" }}
         justifyContent="space-between"
         // border="solid green 3px"
         alignItems="center"
