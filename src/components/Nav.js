@@ -9,6 +9,7 @@ import {
   Hide,
   Text,
 } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/react";
 import CustomMenu from "./utils/CustomMenu";
 import logo from "../assets/image/Logo.svg";
 import ResumeButton from "./utils/ResumeButton";
@@ -39,9 +40,11 @@ const Nav = () => {
                 </Text>
               </GridItem>
               <GridItem className="text" mx="5px">
-                <Text fontSize={{ base: "sm", md: "md", lg: "lg" }}>
-                  Skills
-                </Text>
+                <Link href="#Skills">
+                  <Text as="a" fontSize={{ base: "sm", md: "md", lg: "lg" }}>
+                    Skills
+                  </Text>
+                </Link>
               </GridItem>
               <GridItem className="text" mx="5px">
                 <Text fontSize={{ base: "sm", md: "md", lg: "lg" }}>

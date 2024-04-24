@@ -1,5 +1,14 @@
-import { Box, Image, Text, Center, VStack, Heading } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  Text,
+  Center,
+  VStack,
+  Heading,
+  HStack,
+} from "@chakra-ui/react";
 import HeroImage from "../assets/image/Frame 20.png";
+import Skills from "./Skills";
 import React from "react";
 
 const Home = () => {
@@ -30,30 +39,40 @@ const Home = () => {
             position={{ base: "relative", md: "absolute" }}
             left="0"
             top={"50%"}
-            w={{ md: "50%" }}
+            w={{ base: "100%", md: "50%" }}
             transform={{ md: "translateY(-50%)" }}
             align="start"
           >
             <VStack align={"start"}>
-              <Heading
-                as="b"
-                fontSize={{ base: "md", sm: "lg", md: "xl", lg: "4xl" }}
-              >
-                Hello I'am Diwash Nembang.
-              </Heading>
-              <Heading
-                as="b"
-                fontSize={{ base: "md", sm: "lg", md: "xl", lg: "4xl" }}
-              >
-                I'am Web Developer
-              </Heading>
-              <Heading
-                as="b"
-                fontSize={{ base: "md", sm: "lg", md: "xl", lg: "4xl" }}
-              >
-                Based In Australia
-              </Heading>
-              <Text fontSize={{ base: "xs", sm: "xs", md: "md", lg: "md" }}>
+              <HStack>
+                <Text fontSize={{ base: "xl", sm: "xl", md: "3xl", lg: "4xl" }}>
+                  Hello I'am
+                </Text>
+                <Heading fontSize={{ base: "2xl", lg: "4xl", md: "3xl" }}>
+                  Diwash Nembang.
+                </Heading>
+              </HStack>
+              <HStack my={{ sm: "0px" }}>
+                <Heading
+                  fontSize={{ base: "3xl", sm: "2xl", md: "3xl", lg: "4xl" }}
+                >
+                  Frontend
+                </Heading>
+                <Text fontSize={{ base: "3xl", lg: "4xl" }}>Developer</Text>
+              </HStack>
+              <HStack>
+                <Text
+                  fontSize={{ base: "3xl", sm: "3xl", md: "3xl", lg: "4xl" }}
+                >
+                  Based In
+                </Text>
+                <Heading
+                  fontSize={{ base: "3xl", sm: "3xl", md: "3xl", lg: "4xl" }}
+                >
+                  Australia
+                </Heading>
+              </HStack>
+              <Text fontSize={{ base: "md", sm: "md", md: "md", lg: "xl" }}>
                 I'm Evren Shah Lorem Ipsum is simply dummy text of the printing
                 and typesetting industry. Lorem Ipsum has been the industry's
                 standard dummy text ever since the 1500s, when an unknown
@@ -63,6 +82,7 @@ const Home = () => {
           </Box>
         </VStack>
       </Center>
+      <Skills></Skills>
     </>
   );
 };
