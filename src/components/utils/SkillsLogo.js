@@ -14,7 +14,7 @@ const capatilizeFirstChar = (text) =>
     }
 
     return result;
-  })     ;
+  });
 const convertToOb = (skills) => {
   const obj = {};
   Object.keys(skills).forEach((skill) => {

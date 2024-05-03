@@ -10,6 +10,7 @@ import {
 import HeroImage from "../assets/image/Frame 20.png";
 import Skills from "./Skills";
 import React from "react";
+import AboutMe from "./AboutMe";
 
 const Home = () => {
   return (
@@ -83,6 +84,7 @@ const Home = () => {
         </VStack>
       </Center>
       <Skills></Skills>
+      <AboutMe></AboutMe>
     </>
   );
 };

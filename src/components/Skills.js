@@ -20,8 +20,8 @@ const Skills = () => {
         spacing={"1.5rem"}
       >
         {Object.keys(logos).map((logo, index) => (
-          <Card w={"100%"} h={"150px"} mb={"1.8rem"} maxW="sm">
-            <CardBody key={index}>
+          <Card w={"100%"} h={"150px"} mb={"1.8rem"} maxW="sm" key={index}>
+            <CardBody>
               <VStack justify={"center"} align={"center"} h={"100%"}>
                 <Image src={logos[logo].img}></Image>
                 <Text>{logos[logo].text}</Text>
