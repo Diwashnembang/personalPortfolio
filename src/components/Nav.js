@@ -35,9 +35,11 @@ const Nav = () => {
           <Box>
             <Grid templateColumns="repeat(4,1fr)">
               <GridItem className="text" mx="5px">
-                <Text fontSize={{ base: "sm", md: "md", lg: "lg" }}>
-                  About me
-                </Text>
+                <Link href="#aboutMe">
+                  <Text fontSize={{ base: "sm", md: "md", lg: "lg" }}>
+                    About me
+                  </Text>
+                </Link>
               </GridItem>
               <GridItem className="text" mx="5px">
                 <Link href="#Skills">

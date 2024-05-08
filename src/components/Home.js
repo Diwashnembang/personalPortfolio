@@ -11,6 +11,7 @@ import HeroImage from "../assets/image/Frame 20.png";
 import Skills from "./Skills";
 import React from "react";
 import AboutMe from "./AboutMe";
+import Projects from "./Projects";
 
 const Home = () => {
   return (
@@ -85,6 +86,7 @@ const Home = () => {
       </Center>
       <Skills></Skills>
       <AboutMe></AboutMe>
+      <Projects></Projects>
     </>
   );
 };

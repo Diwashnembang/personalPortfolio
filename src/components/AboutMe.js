@@ -3,11 +3,14 @@ import React from "react";
 import img from "../assets/image/aboutMe.png";
 const AboutMe = () => {
   return (
-    <Center>
+    <Center id="aboutMe">
       <SimpleGrid
         columns={[1, null, 2]}
         maxW={"1280px"}
         w={"1280px"}
+        // justifyItems={"center"}
+        mx={"1rem"}
+        my={"2rem"}
         spacing={"1rem"}
       >
         <Box>
