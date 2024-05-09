@@ -1,15 +1,5 @@
 import weatherProject from "../../assets/image/weatherProject.png";
-
-const projectDetails = (projects) => {
-  if (!Array.isArray(projects)) return alert("project must be an array");
-
-  return projects.map((project) => ({
-    img: project.img,
-    details: project.details,
-    link: project.link,
-    title: project.title,
-  }));
-};
+import rockPaperScissors from "../../assets/image/rockPaperScissors.png";
 
 const projects = [
   {
@@ -18,8 +8,14 @@ const projects = [
     link: "https://diwashnembang.github.io/weather-app/",
     details: "This webapp forcaste weather.",
   },
+  {
+    img: rockPaperScissors,
+    title: "Rock Papers & Scissors Game",
+    link: "https://diwashnembang.github.io/rock-paper-scissor/",
+    details: "this is 2 one player scissors paper rock game. Classic!!",
+  },
 ];
-console.log(projects);
-const ProjectDetailsUtils = projectDetails(projects);
+
+const ProjectDetailsUtils = projects;
 
 export default ProjectDetailsUtils;

@@ -85,8 +85,8 @@ const Home = () => {
         </VStack>
       </Center>
       <Skills></Skills>
-      <AboutMe></AboutMe>
       <Projects></Projects>
+      <AboutMe></AboutMe>
     </>
   );
 };
