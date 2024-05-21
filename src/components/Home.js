@@ -12,6 +12,7 @@ import Skills from "./Skills";
 import React from "react";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
+import ContactMe from "./ContactMe";
 
 const Home = () => {
   return (
@@ -87,6 +88,7 @@ const Home = () => {
       <Skills></Skills>
       <Projects></Projects>
       <AboutMe></AboutMe>
+      <ContactMe></ContactMe>
     </>
   );
 };
